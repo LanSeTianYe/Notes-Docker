@@ -8,17 +8,16 @@ notes 项目的 doceker 镜像，一键部署，部署之后通过浏览器即�
 
 ![](./img/note_docker.png)
 
-**Nginx**：镜像里面会启动一个 Nginx 做反向代理。
+**Nginx**：镜像里面会启动一个 `Nginx` 做反向代理。
 
 * 配置 `/rebuild` 的请求到 `rebuild` 服务。
 * 配置 `/*` 的请求到静态资源。
 * 配置 `4XX 5XX` 的请求到 [https://http.cat/](https://http.cat/)
 
-**构建服务**: 是 Nginx 把 `/rebuild` 请求路由到的地方。
-
+**构建服务**: 把 `Markdown` 文件编译成静态页面，即 `html` 文件。
 * 是一个 `Python` 的 `Web` 项目，收到请求后执行 `build.sh` 脚本。
 * 该服务是为了接收 `Github` 的回调，当项目有新提交的时候调用该接口。
-* 为了安全接口调用是进行了简单的验证，当URL中包含 【auth_key】的时候验证才会通过，验证不通过不会执行重新构建操作。
+* 为了安全接口调用是进行了简单的验证，当 `URL` 中包含 【auth_key】的时候验证才会通过，验证不通过不会执行重新构建操作。
 
 **Github 回调设置**：在仓库的 `Settings -> Webhooks` 中添加 `Webhooks` 即可。 示例配置如下：
 
