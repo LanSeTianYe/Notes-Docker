@@ -1,0 +1,95 @@
+# mkdocs serve IP和端口
+# dev_addr: 0.0.0.0:8000
+
+# 网站名字
+# TODO 修改成你的信息
+site_name: XXXX
+# 网站地址
+# TODO 修改成你的信息
+site_url: https://note.sunfeilog.com
+# 仓库地址
+# TODO 修改成你的信息
+repo_url: https://github.com/LanSeTianYe/Notes-Template
+# 仓库名字
+# TODO 修改成你的信息，格式为：用户名/仓库名
+repo_name: LanSeTianYe/Notes-Template
+# 点击编辑按钮跳转的地址，不需要修改
+edit_uri: edit/master/
+# 网站描述
+# TODO 修改成你的信息
+site_description: XXXX的笔记
+# 网站作者
+# TODO 修改成你的信息
+site_author: XXXX
+
+# TODO 修改成你的信息
+copyright: Copyright  2025 - 2999 By 「XXX」
+
+extra:
+  # 页脚
+  social:
+    - icon: fontawesome/brands/twitter 
+      # TODO 修改成你的信息
+      link: https://twitter.com/lantian_2050
+    - icon: fontawesome/brands/github 
+      # TODO 修改成你的信息
+      link: https://github.com/sunfeilong
+
+# 主题 
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - header.autohide
+    - content.action.edit
+  # language: zh
+  name: material
+  palette:
+    # primary: cyan
+    # accent: green
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: 切换到夜间模式
+      primary: cyan
+      accent: green
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到白天模式
+      primary: cyan
+      accent: green
+
+# 代码高亮
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - codehilite:
+      linenums: true
+  - toc:
+      permalink: "#"
+  - pymdownx.highlight:
+      anchor_linenums: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.snippets
+
+# 插件配置
+plugins:
+  - search:
+      # build 的时候构建索引
+      # 支持的语言
+      lang:
+        - en
+        - de
+        - ru
+        - ja
+  # 修订日期插件(要求)
+  - git-revision-date-localized:
+      # 日期格式 2020-07-02 15:15:15
+      type: timeago
+  # 控制每个目录展示
+  - awesome-pages:
+      filename: .pages.yml
+      collapse_single_pages: false
+      strict: false
+
