@@ -42,7 +42,7 @@ theme:
   features:
     - header.autohide
     - content.action.edit
-  # language: zh
+  language: zh
   name: material
   palette:
     # primary: cyan
