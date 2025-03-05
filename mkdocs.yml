@@ -25,14 +25,20 @@ site_author: XXXX
 # TODO 修改成你的信息
 copyright: Copyright  2025 - 2999 By 「XXX」
 
+# 样式
+extra_css:
+  # 文件在 https://github.com/LanSeTianYe/Notes-Template 对应的目录下面
+  # 可以自定义样式
+  - stylesheets/extra.css
+
 extra:
   # 页脚
   social:
     - icon: fontawesome/brands/twitter 
-      # TODO 修改成你的信息
+      # TODO 修改成你的信，可删除
       link: https://twitter.com/lantian_2050
     - icon: fontawesome/brands/github 
-      # TODO 修改成你的信息
+      # TODO 修改成你的信息，可删除
       link: https://github.com/sunfeilong
 
 # 主题 
