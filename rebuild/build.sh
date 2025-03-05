@@ -1,7 +1,9 @@
 #!/bin/sh
 
-# TODO: 请修改为你的【仓库地址】
-git_repository="https://github.com/LanSeTianYe/Notes-Template.git"
+# 进入工作目录
+cd /home/www
+
+git_repository="$1"
 
 if [[ ! -d "docs" ]];then
     echo "docs not exists, clone project start ..."
