@@ -34,9 +34,10 @@ http://localhost:8000/rebuild?auth_key=00000000839a8e6886ab5951d76f411475428afc9
 
 这一步需要先执行，后面的配置会用到笔记仓库的地址。
 
-可以 Fork 模版项目： `https://github.com/LanSeTianYe/Notes-Template`
+可以 Fork 一份模版项目或者下载一份然后上传到自己的仓库： `https://github.com/LanSeTianYe/Notes-Template`
 
-**第二步**：Fork 一份或者直接拉取下面仓库，然后改配置。
+
+**第二步**： 拉取下面仓库并修改配置。
 
 ```shell
 git pull https://github.com/LanSeTianYe/Notes-Docker.git
